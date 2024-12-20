@@ -15,19 +15,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-/* Tablet */
-@media screen and (max-width: 991px) {
-:root {
-    --container-padding: 1.5em;
-}
-}
-/* Mobile Landscape */
-@media screen and (max-width: 767px) {
-:root {
-    --container-padding: 1em;
-    --section-padding: calc(var(--gap) * 2);
-}
-}
+
 /* ------------------------- Scaling System by Osmo [https://osmo.supply/] -------------------------  */
 /* Desktop */
 :root {
@@ -133,17 +121,6 @@ a {
     line-height: 1;
 }
 
-.container {
-    z-index: 1;
-    max-width: var(--size-container);
-    padding-left: var(--container-padding);
-    padding-right: var(--container-padding);
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-}
-
 .container.is--full {
     max-width: 100%;
 }
@@ -160,10 +137,6 @@ a {
     .container.is--medium, .container.is--small {
         max-width: calc(var(--size-container) * 1);
     }
-
-    .clone-in-webflow {
-        margin-right: -.5em;
-    }
 }
 
 @media screen and (max-width: 767px) {
@@ -173,29 +146,5 @@ a {
 
     h2 {
         font-size: 3.25em;
-    }
-
-
-    @font-face {
-        font-family: 'PP Neue Montreal';
-        src: url('https://cdn.prod.website-files.com/6756bf75aa4ecba10df0a4e9/6756bf75aa4ecba10df0a546_PPNeueMontreal-Regular.woff2') format('woff2');
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-    }
-
-    @font-face {
-        font-family: 'PP Neue Montreal';
-        src: url('https://cdn.prod.website-files.com/6756bf75aa4ecba10df0a4e9/6756bf75aa4ecba10df0a54e_PPNeueMontreal-Medium.woff2') format('woff2');
-        font-weight: 500;
-        font-style: normal;
-        font-display: swap;
-    }
-    @font-face {
-        font-family: 'PP Neue Montreal';
-        src: url('https://cdn.prod.website-files.com/6756bf75aa4ecba10df0a4e9/6756bf75aa4ecba10df0a543_PPNeueMontreal-SemiBold.woff2') format('woff2');
-        font-weight: 600;
-        font-style: normal;
-        font-display: swap;
     }
 }
